@@ -1,3 +1,7 @@
+# Create a plot to show the motor vehicle emissions changes between
+#  Baltimore City and Los Aneles County between year 1999 and 2008.
+# Which city has seen greater changes over time?
+
 library(dplyr)
 library(ggplot2)
 

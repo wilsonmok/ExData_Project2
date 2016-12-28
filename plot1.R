@@ -1,3 +1,6 @@
+# Construct a plot to show total emissions from PM2.5 decreased in US 
+#  from 1999 to 2008.
+
 library(dplyr)
 
 plotfile <- "plot1.png"

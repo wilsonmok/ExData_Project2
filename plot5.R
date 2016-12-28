@@ -1,3 +1,6 @@
+# Create a plot to show the emission changes from motor vehicle from 1999-2008
+#  in Baltimore City
+
 library(dplyr)
 library(ggplot2)
 
