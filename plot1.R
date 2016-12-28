@@ -1,10 +1,8 @@
 library(dplyr)
 
-source("readData.R")
-
 plotfile <- "plot1.png"
 
-nei <- readNEIData()
+nei <- readRDS("../data/summarySCC_PM25.rds")
 
 year_emission <- with(nei, tapply(Emissions, year, sum))
 

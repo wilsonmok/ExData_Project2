@@ -1,12 +1,10 @@
 library(dplyr)
 library(ggplot2)
 
-source("readData.R")
-
 plotfile <- "plot4.png"
 
-nei <- readNEIData()
-scc <- readSCCData()
+nei <- readRDS("../data/summarySCC_PM25.rds")
+scc <- readRDS("../data/Source_Classification_Code.rds")
 
 # filter to include coal combustion-related SCC
 scc_comb_coal <- filter(scc,grepl("Comb.+Coal", EI.Sector))

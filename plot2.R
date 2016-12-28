@@ -1,10 +1,8 @@
 library(dplyr)
 
-source("readData.R")
-
 plotfile <- "plot2.png"
 
-nei <- readNEIData()
+nei <- readRDS("../data/summarySCC_PM25.rds")
 
 bc_nei <- subset(nei, fips == "24510")
 

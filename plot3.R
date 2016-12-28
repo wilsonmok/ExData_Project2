@@ -1,11 +1,9 @@
 library(dplyr)
 library(ggplot2)
 
-source("readData.R")
-
 plotfile <- "plot3.png"
 
-nei <- readNEIData()
+nei <- readRDS("../data/summarySCC_PM25.rds")
 
 # Baltimore City, Maryland
 bc_nei <- filter(nei, fips == "24510")
